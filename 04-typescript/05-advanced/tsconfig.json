@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "target": "ES5",
+        "module": "CommonJS",
+        "forceConsistentCasingInFileNames": true,
+        "strictNullChecks": true,
+        "skipLibCheck": true
+    }
+}
