@@ -10,6 +10,9 @@ const App: FC = () => {
   const n = Math.floor(Math.random() * 10);
   const threshold = 5;
 
+  const list = ['Patty', 'Rolley', 'Bobby'];
+  const list2 = [1, 2, 3, 4, 5];
+
   return (
       <div className = "App">
         <div>{greet(name)}</div>
@@ -25,6 +28,16 @@ const App: FC = () => {
         {n > threshold && (<p>{n}は{threshold}よりも大きい値です</p>)}
         {n > threshold || (<p>{n}は{threshold}以下の値です</p>)}
         <p>{n}は{n % 2 === 0 ? '偶数' : '奇数'}です</p>
+
+        <ul>
+          {list.map((name) => (
+            <li>Hello, {name}!</li>
+          ))}
+        </ul>
+        <ul>
+          {list2.filter((n) => n % 2 === 0).map((n) => <li>{n}は偶数だ</li>)}
+        </ul>
+        
         <header className="App-header">
           <img src={viteLogo} className="logo" alt="Vite logo" />
           <img src={reactLogo} className="logo react" alt="React logo" />
