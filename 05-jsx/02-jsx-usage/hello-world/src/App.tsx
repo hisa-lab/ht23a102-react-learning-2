@@ -9,7 +9,14 @@ const App: FC = () => {
   return (
       <div className = "App">
         <div>{greet(name)}</div>
-
+        <div />
+        <div></div>
+        <div>{''}</div>
+        <div>{undefined}</div>
+        <div>{null}</div>
+        <div>{true}</div>
+        <div>{false}</div>
+        
         <header className="App-header">
           <img src={viteLogo} className="logo" alt="Vite logo" />
           <img src={reactLogo} className="logo react" alt="React logo" />
