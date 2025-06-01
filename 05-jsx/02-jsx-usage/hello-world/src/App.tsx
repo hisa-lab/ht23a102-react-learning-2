@@ -13,6 +13,14 @@ const App: FC = () => {
   const list = ['Patty', 'Rolley', 'Bobby'];
   const list2 = [1, 2, 3, 4, 5];
 
+  const elems = (
+    <>
+      <div>foo</div>
+      <div>bar</div>
+      <div>baz</div>
+    </>
+  );
+
   return (
       <div className = "App">
         <div>{greet(name)}</div>
@@ -45,12 +53,8 @@ const App: FC = () => {
           複数行に
           渡るコメント 
         */}
-
-        <header className="App-header">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-          <img src={reactLogo} className="logo react" alt="React logo" />
-          <p>Hello World!</p>
-        </header>
+        
+        {elems}
       </div>
   );
 };
