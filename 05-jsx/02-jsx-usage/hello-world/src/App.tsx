@@ -38,6 +38,14 @@ const App: FC = () => {
           {list2.filter((n) => n % 2 === 0).map((n) => <li>{n}は偶数だ</li>)}
         </ul>
         
+        {
+          // インラインコメント
+        }
+        {/*           
+          複数行に
+          渡るコメント 
+        */}
+
         <header className="App-header">
           <img src={viteLogo} className="logo" alt="Vite logo" />
           <img src={reactLogo} className="logo react" alt="React logo" />
