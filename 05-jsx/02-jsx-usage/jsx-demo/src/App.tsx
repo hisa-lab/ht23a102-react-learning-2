@@ -1,5 +1,6 @@
 import Greet from './components/Greet';
 import Summary from './components/Summary';
+import Form from './components/Form';
 
 import './App.css';
 import type React from 'react';
@@ -17,19 +18,20 @@ const App: React.FC = () => (
         bitter, yet sweet friendship of Patty and Bobby begins to blossom.
       </p>
     </Summary>
+    <Form selected='fox' />
 
-    <form>
+    {/* <form>
       <label htmlFor="favChar">好きなキャラクターは？</label>
       <select id="favCahr" defaultValue="fox">
         <option value="rabbit">パティ</option>
         <option value="bear">ボビー</option>
-        <option value="fox">ダイアナ</option> {/* selected */}
+        <option value="fox">ダイアナ</option>
         <option value="pig">プリプリン</option>
         <option value="squirrel">ジュディ</option>
       </select>
       <label htmlFor="favReason">そのキャラクターのどこが好き？</label>
       <textarea id="favReason" defaultValue=" 【例】見た目が好き" />
-    </form>
+    </form> */}
   </div>
 );
 
