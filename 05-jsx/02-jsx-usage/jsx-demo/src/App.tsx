@@ -1,6 +1,7 @@
 import Greet from './components/Greet';
 import Summary from './components/Summary';
 import Form from './components/Form';
+import TextInput from './components/TextInput';
 
 import './App.css';
 import type React from 'react';
@@ -19,6 +20,7 @@ const App: React.FC = () => (
       </p>
     </Summary>
     <Form selected='fox' />
+    <TextInput />
 
     {/* <form>
       <label htmlFor="favChar">好きなキャラクターは？</label>
