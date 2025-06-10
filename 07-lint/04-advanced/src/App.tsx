@@ -1,12 +1,12 @@
-import { useState } from 'react';
-import viteLogo from '../../../../../../vite.svg';
+import { FC, useState } from 'react';
+import viteLogo from 'vite.svg';
 import reactLogo from './assets/react.svg';
 import './App.css';
 
 const title = import.meta.env.VITE_APP_TITLE;
 console.dir(import.meta.env);
 
-function App() {
+const App: FC = () => {
   const [count, setCount] = useState(0);
 
   return (
@@ -22,7 +22,7 @@ function App() {
       <h1>{title}</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}!
+          count is {count}!!
         </button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
@@ -33,6 +33,6 @@ function App() {
       </p>
     </>
   );
-}
+};
 
 export default App;
